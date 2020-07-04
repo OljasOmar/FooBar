@@ -1,4 +1,5 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
 <%--
   Created by IntelliJ IDEA.
   User: Oljas
@@ -6,17 +7,17 @@
   Time: 13:42
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>FooBar</title>
 </head>
 <body>
-<h2>Please enter the number:</h2></body><br>
+<h2>Please enter the number:</h2><br>
 <hr>
 <form:form modelAttribute="FooBar" method="post" action="/showResults">
-    <label>Pass Integer Number</label>
-    <form:input path="integer" />
+
+    <label>Type The Number</label>
+    <form:input path="long" />
     <label></label>
     <input type="submit" value="Submit"/>
 

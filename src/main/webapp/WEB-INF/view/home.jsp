@@ -1,4 +1,5 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
 <%--
   Created by IntelliJ IDEA.
   User: Oljas
@@ -14,8 +15,9 @@
 <h2>Please enter the number:</h2><br>
 <hr>
 <form:form modelAttribute="FooBar" method="post" action="/showResults">
-    <label>Pass Integer Number</label>
-    <form:input path="integer" />
+
+    <label>Type The Number</label>
+    <form:input path="long" />
     <label></label>
     <input type="submit" value="Submit"/>
 

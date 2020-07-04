@@ -1,3 +1,6 @@
+<%@ taglib prefix="th" uri="http://www.springframework.org/tags" %>
+
+
 <%--
   Created by IntelliJ IDEA.
   User: Oljas
@@ -10,6 +13,9 @@
     <title>Result</title>
 </head>
 <body>
-The result is:  ${result}
+The result is: ${result}
+
+<br><br>
+<a href="/">Try another number</a>
 </body>
 </html>
