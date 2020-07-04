@@ -35,6 +35,11 @@ public class FooBarService {
     @ExceptionHandler
     public String buildString(Long number) {
 
+        // Remove leading 0
+        String stringLong = number.toString().replaceFirst("^0+(?!$)", "");
+        number = Long.parseLong(stringLong);
+
+
         List<FooBarGenerator> list = fooBarCollection.formList();
         StringBuilder builder = new StringBuilder();
 
