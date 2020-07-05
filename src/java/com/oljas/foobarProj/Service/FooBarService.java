@@ -39,8 +39,9 @@ public class FooBarService {
         String stringLong = number.toString().replaceFirst("^0+(?!$)", "");
         number = Long.parseLong(stringLong);
 
-
+        // generate list of FoobarCollection object
         List<FooBarGenerator> list = fooBarCollection.formList();
+        // using StringBuilder for better performance
         StringBuilder builder = new StringBuilder();
 
         for (FooBarGenerator m: list) {
@@ -51,6 +52,7 @@ public class FooBarService {
 
         list.clear();
 
+        // return message if result returns nothing
         if (builder.length() < 1) {
             result = "No result";
         } else {

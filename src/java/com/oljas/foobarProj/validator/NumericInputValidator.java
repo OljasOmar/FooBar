@@ -12,6 +12,7 @@ public class NumericInputValidator implements InputValidator<Long> {
         this.notvalid = notvalid;
     }
 
+    // validate input number
     @Override
     public void validate(@NonNull Long input) {
 

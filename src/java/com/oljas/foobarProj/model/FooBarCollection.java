@@ -12,7 +12,7 @@ public class FooBarCollection {
     public List<FooBarGenerator> getList() {
         return list;
     }
-
+    // Here we can add other cases, if requested
     public List<FooBarGenerator> formList(){
         list.add(new FooBarGenerator(3L, "foo"));
         list.add(new FooBarGenerator(5L, "bar"));
