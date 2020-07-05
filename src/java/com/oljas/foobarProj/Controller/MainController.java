@@ -25,7 +25,7 @@ public class MainController {
 
     @ExceptionHandler
     @RequestMapping(value="/showResults", method=RequestMethod.POST)
-    public String welcomeUser(
+    public String showResult(
             @RequestParam("long") Long number,
             Model model) throws IllegalStateException{
         String result = "";
